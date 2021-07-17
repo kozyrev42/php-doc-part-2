@@ -197,3 +197,14 @@ $array = [
     "bar" => "foo",
 ];
 ?>
+
+<!-- Смешанные ключи типов int и string -->
+<?php
+$array = array(
+    "foo" => "bar",
+    "bar" => "foo",
+    100   => -100,
+    -100  => 100,
+);
+var_dump($array);
+?>
